@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+section {
+    height:100vh;
+    display: flex;
+    border-bottom:1px solid black;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    z-index: 1000;
+}
+
+nav a {
+    display:flex;
+    color: white;
+    justify-items: end;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 1.2rem;
+    position:relative;
+}
+
+nav a:hover {
+    color:white;
+}
+
+nav a::after {
+    content:"";
+    width:100%;
+    height:4px;
+    background-image:linear-gradient(black, white);
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    transform:scalex(0);
+    transform-origin: center;
+}
+
+nav a:hover::after {
+    transform: scalex(1);
+    transition: 0.66s;
+    transition-timing-function: ease-in-out;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+#rendesishme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2%;
+    text-align: center;
+    flex-wrap:wrap;
+    font-size:1.8rem;
+}
+
+.percuesit {
+    font-size:2rem;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap:wrap;
+    gap:2%;
+}
+
+.percuesi1 {
+    font-size:2rem;
+    width:500px;
+    height:300px;
+    text-align: center;
+    gap:2%;
+    border:2px solid black;
+    border-radius:10px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+    margin-top:10px;
+}
+
+.percuesi1:hover {
+    scale:1.05;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+    transition: scale 1s;
+}
+
+.percuesi2 {
+    gap: 2%;
+    font-size:2rem;
+    height:300px;
+    width:500px;
+    border:2px solid black;
+    border-radius:10px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+    text-align: center;
+    margin-top:10px;
+}
+
+.percuesi2:hover {
+    scale:1.05;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+    transition: scale 1s;
+}
+
+.percuesi3 {
+    gap: 2%;
+    font-size:2rem;
+    height:300px;
+    width:500px;
+    border:2px solid black;
+    border-radius:10px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+    text-align: center;
+    margin-top:10px;
+}
+
+.percuesi3:hover {
+    scale:1.05;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+    transition: scale 1s;
+}
+
+#ndihma {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2%;
+    text-align: center;
+    flex-wrap:wrap;
+    padding:20px;
+    font-size:2.5rem;
+}
+
+.rer {
+    width:800px;
+    height:300px;
+    display:flex;
+    text-align: center;
+    border:2px solid black;
+    border-radius:10px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+    padding:20px;
+}
+
+.rer:hover {
+    scale:1.05;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+    transition: scale 1s;
+}
+
+#permbledhje {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2%;
+    text-align: center;
+    flex-wrap:wrap;
+    padding:20px;
+    font-size:2.5rem;
+}
+
+.per {
+    width:800px;
+    height:300px;
+    display:flex;
+    text-align: center;
+    border:2px solid black;
+    border-radius:10px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+    padding:20px;
+}
+
+.per:hover {
+    scale:1.05;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+    transition: scale 1s;
+}
+
+#kryesore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2%;
+    text-align: center;
+    flex-wrap:wrap;
+    padding:20px;
+    font-size:2.5rem;
+}
+
+.krye {
+    width:800px;
+    height:300px;
+    display:flex;
+    text-align: center;
+    border:2px solid black;
+    border-radius:10px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+    padding:20px;
+}
+
+.krye:hover {
+    scale:1.05;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+    transition: scale 1s;
+}

@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    z-index: 1000;
+}
+
+nav a {
+    display:flex;
+    color: white;
+    justify-items: end;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 1.2rem;
+    position:relative;
+}
+
+nav a:hover {
+    color:white;
+}
+
+nav a::after {
+    content:"";
+    width:100%;
+    height:4px;
+    background-image:linear-gradient(black, white);
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    transform:scalex(0);
+    transform-origin: center;
+}
+
+nav a:hover::after {
+    transform: scalex(1);
+    transition: 0.66s;
+    transition-timing-function: ease-in-out;
+}
+
+#Tik {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap:wrap;
+    margin-top: 20px;
+    font-size:2rem;
+    text-align: center;
+}
+
+#Tik a {
+    display:flex;
+    color: black;
+    background-color: gray;
+    justify-items: end;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 2rem;
+    position:relative;
+    margin-top:80px;
+    border-radius:10px;
+}
+
+#Tik a:hover {
+    color:black;
+}
+
+#Tik a::after {
+    content:"";
+    width:100%;
+    height:8px;
+    background-image:linear-gradient(black, white);
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    transform:scalex(0);
+    transform-origin: center;
+}
+
+#Tik a:hover::after {
+    transform: scalex(1);
+    transition: 0.66s;
+    transition-timing-function: ease-in-out;
+}
